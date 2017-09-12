@@ -4,7 +4,7 @@ function displayGifs() {
 
 	// Get the gifs
 	var topic = $(this).attr("data-name");
-	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC&rating=pg&limit=10";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=d77361223e3b4c39983e2eff1043af04&rating=pg&limit=10";
 
 	    $.ajax({
 	      url: queryURL,
@@ -64,22 +64,6 @@ function displayGifs() {
         });
 }
 
-// // Animate the gifs
-// $(".imageState").on("click", function() {
-//       // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-//       var state = $(this).attr("data-state");
-//       // If the clicked image's state is still, update its src attribute to what its data-animate value is.
-//       // Then, set the image's data-state to animate
-//       // Else set src to the data-still value
-//       if (state === "still") {
-//         $(this).attr("src", $(this).attr("data-animate"));
-//         $(this).attr("data-state", "animate");
-//       } else {
-//         $(this).attr("src", $(this).attr("data-still"));
-//         $(this).attr("data-state", "still");
-//       }
-// });
-
 // Function for displaying topics
 function renderButtons() {
 
@@ -101,6 +85,7 @@ $("#add-gif").on("click", function(event) {
 	// This line grabs the input from the textbox
 	var topic = $("#gif-input").val().trim();
 	topics.push(topic);
+	$("#gif-input").val("");
 	renderButtons();
 });
 
