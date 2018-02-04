@@ -1,5 +1,5 @@
 # giphySearcher
-Click a category to see the top 10 Gifs inside, or create your own category to find something you like! Uses GIPHY API to find all the best Gifs. Have fun!
+Welcome to giphySearcher, a fun app to find you favorite gifs! Load up the site and click a category to see the top 10 gifs. You can also create your own category to find something you like! The app uses the GIPHY API to find all the best Gifs. Have fun!
 
 https://eastman81.github.io/giphySearcher/
 
